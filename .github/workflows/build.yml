@@ -22,9 +22,4 @@ jobs:
       
       - run: npx expo install
       
-      - run: npx eas build --platform android --profile preview --non-interactive --local --output ./EditAI.apk
-        
-      - uses: actions/upload-artifact@v4
-        with:
-          name: EditAI-APK
-          path: ./EditAI.apk
+      - run: npx eas build --platform android --profile previe
